@@ -1,0 +1,52 @@
+{% extends 'navbar.html' %}
+
+{% block title %}
+Miembros del Curso IN3501
+{% endblock title %}
+
+{% block content %}
+
+<div id="descripcion" class="container">
+    <h1>Formulario de Registro Cuerpo Docente</h1>
+
+    <form action="#" autocomplete="off">
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">Nombre</label>
+      <input type="text" class="form-control" id="exampleText" placeholder="Por ejemplo, Pedro Pérez" name="inputText">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleNumber">Edad</label>
+      <input type="number" class="form-control" id="exampleNumber" placeholder="Ingrese su edad" name="inputNumber">
+    </div>
+        <div class="form-group">
+      <label for="exampleInputEmail1">Correo Electrónico</label>
+      <input type="email" class="form-control" id="exampleEmail" placeholder="ejemplo@hola.com" name="inputEmail">
+    </div>
+        <div class="form-group">
+      <label for="exampleInputPassword1">Escoja una contraseña</label>
+      <input type="password" class="form-control" id="examplePassword" placeholder="Por favor, asegúrese de que sea segura. No tenemos tanto dinero para invertir en seguridad :-)" name="inputPassword">
+    </div>
+
+        <div class="form-group">
+      <label for="exampleFormControlSelect1">Escoja su cargo</label>
+      <select class="form-control" id="exampleSelect" name="input Select">
+        <option value="1">Auxiliar</option>
+        <option value="2">Ayudante</option>
+        <option value="3">Profesor</option>
+        <option value="4">Estudiante</option>
+      </select>
+    </div>
+    <br>
+
+
+    <div class="form-group">
+    <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+
+  </form>
+
+</div>
+
+{% endblock content %}

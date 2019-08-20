@@ -1,8 +1,14 @@
 from django.shortcuts import render
 
+
 # Create your views here.
 def index(request):
-	return render(request, 'home.html')
+    return render(request, 'home.html')
+
 
 def inputs(request):
-	return render(request, 'inputs.html')
+    return render(request, 'inputs.html')
+
+
+def members(request):
+    return render(request, 'members.html')
